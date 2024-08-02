@@ -1,0 +1,88 @@
+@media(min-width: 800px) {
+
+    .img-container {
+        height: clamp(20rem, 20rem + 100vw - 375px, 33rem);
+    }
+
+    .text h1 {
+        font-size: 1.25rem;
+        line-height: 140%;
+    }
+}
+
+@media(min-width: 1024px), (min-width: 800px) and (orientation: landscape) {
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: clamp(2rem, 15rem - 1600px + 200vh, 15rem)
+                 clamp(5rem, 22rem - 1440px + 100vw, 22rem);
+        position: relative;
+    }
+
+    .card {
+        position: static;
+        grid-template-columns:
+            [img-start] 95fr [img-end] 2.5625rem [content-start] 121fr [content-end] 2.5625rem;
+        grid-template-rows:
+            [full-height-start] 2rem [content-start] 1fr [content-end] 1.5rem [profile-start] 2.5rem [profile-end] 2rem [full-height-end];
+        min-height: 17rem;
+        min-width: 45rem;
+        max-width: 50rem;
+    }
+
+    .img-container {
+        display: flex;
+        height: 100%;
+        grid-column: img;
+        grid-row: full-height;
+    }
+
+    .main-img {
+        top: auto;
+        bottom: 0;
+        height: 100%;
+        width: 125%;
+        right: -25%;
+    }
+
+    .text {
+        grid-row: content;
+        padding: 0;
+    }
+
+    .profile {
+        grid-row: profile;
+        padding-bottom: 0;
+        margin-top: 0;
+    }
+
+    .share-segment {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        border-radius: 10px;
+        padding: 1.1rem 2.2rem;
+    }
+
+    #inner-share-btn {
+        display: none;
+    }
+
+    .share-segment::before {
+        background-color: var(--very-dark-grayish-blue);
+        content: "";
+        height: 2rem;
+        width: 2rem;
+        position: absolute;
+        bottom: -5px;
+        transform: rotate(45deg);
+    }
+
+    .hidden {
+        display: none;
+    }
+
+}

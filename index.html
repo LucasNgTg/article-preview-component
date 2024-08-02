@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Article preview component</title>
+
+  <!-- Manrope font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+  <!-- reset styles -->
+  <link rel="stylesheet" href="./src/css/reset.css">
+
+  <!-- apply custom styles -->
+  <link rel="stylesheet" href="./src/css/styles.css">
+
+  <!-- responsiveness -->
+  <link rel="stylesheet" href="./src/css/responsive.css">
+
+</head>
+
+<body>
+  <main>
+    <div class="card">
+      <div class="img-container">
+        <img src="./images/drawers.jpg" alt="Drawers" class="main-img">
+      </div>
+
+      <div class="text">
+        <a href="#">
+          <h1>
+            Shift the overall look and feel by adding these wonderful
+            touches to furniture in your home
+          </h1>
+        </a>
+        <p>
+          Ever been in a room and felt like something was missing? Perhaps
+          it felt slightly bare and uninviting. I’ve got some simple tips
+          to help you make any room feel complete.
+        </p>
+      </div>
+
+      <div class="profile">
+        <img src="./images/avatar-michelle.jpg" alt="Picture of Michelle Appleton" class="avatar-img">
+        <div class="info">
+          <a href="#" class="name">Michelle Appleton</a>
+          <span class="date">28 Jun 2020</span>
+        </div>
+        <button id="share-btn">
+          <img src="./images/icon-share.svg" alt="Share">
+        </button>
+      </div>
+
+      <div class="share-segment hidden">
+        <h2>Share</h2>
+
+        <ul class="social">
+          <li>
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https://lucasngtg.github.io/article-preview-component/" target="_blank">
+              <img src="./images/icon-facebook.svg" alt="Facebook">
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/intent/tweet?url=https://lucasngtg.github.io/article-preview-component/&text=" target="_blank">
+              <img src="./images/icon-twitter.svg" alt="X (formerly known as Twitter)">
+            </a>
+          </li>
+          <li>
+            <a href="https://pinterest.com/pin/create/button/?url=https://lucasngtg.github.io/article-preview-component/&media=&description=" target="_blank">
+              <img src="./images/icon-pinterest.svg" alt="Pinterest">
+            </a>
+          </li>
+        </ul>
+
+        <button id="inner-share-btn">
+          <img src="./images/icon-share.svg" alt="Share">
+        </button>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="attribution">
+    <span>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    </span>
+    <span>Coded by <a href="https://github.com/LucasNgTg">LucasNgTg</a>.</span>
+  </footer>
+
+  <script src="./src/js/index.js"></script>
+</body>
+
+</html>
